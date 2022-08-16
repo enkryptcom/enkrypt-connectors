@@ -1,0 +1,26 @@
+{
+  "name": "enkrypt-connectors",
+  "packageManager": "yarn@3.2.2",
+  "description": "Various connectors necessary for Enkrypt",
+  "repository": "git@github.com:enkryptcom/enkrypt-connectors.git",
+  "author": "kvhnuke <10602065+kvhnuke@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "yarn workspaces foreach -pv run test",
+    "lint": "yarn workspaces foreach run lint",
+    "build:all": "ultra -r build",
+    "watch": "concurrently 'npm:watch-*'",
+    "watch-extension": "cd packages/extension && npm run watch",
+    "watch-ts": "nodemon --exec 'yarn run build:all && node scripts/compile-done.js'"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "node-notifier": "^10.0.1",
+    "nodemon": "^2.0.19",
+    "ultra-runner": "^3.10.5"
+  }
+}
