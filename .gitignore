@@ -103,6 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
+.ultra.cache.json
+
 # Yarn
 .pnp.*
 .yarn/*

@@ -43,5 +43,8 @@
   },
   "keywords": [],
   "author": "Anonymous",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@wagmi/core": "^0.5.3"
+  }
 }
