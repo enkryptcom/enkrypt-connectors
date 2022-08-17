@@ -1,4 +1,5 @@
-type ExampleType = {
-    platform: string;
-    version: string;
-};
+import { Ethereum } from "@wagmi/core";
+
+export interface EnkryptEthereum extends Ethereum {
+  isEnkrypt?: boolean;
+}
