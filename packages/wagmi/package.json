@@ -1,6 +1,6 @@
 {
   "name": "@enkryptcom/connector-wagmi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A wagmi compatible wallet connector for Enkrypt",
   "repository": {
     "type": "git",
@@ -44,5 +44,8 @@
   },
   "keywords": [],
   "author": "Anonymous",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@wagmi/core": "^0.5.4"
+  }
 }
